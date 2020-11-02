@@ -7,6 +7,14 @@ variable "cluster_name" {
   default = "eks-cluster"
 }
 
+variable "instance_type" {
+  default = "t2.small"
+}
+
+variable "key_name" {
+  default = "kiran"
+}
+
 variable "map_accounts" {
   description = "Additional AWS account numbers to add to the aws-auth configmap."
   type        = list(string)
